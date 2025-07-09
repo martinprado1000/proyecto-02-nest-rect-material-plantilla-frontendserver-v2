@@ -3,7 +3,3 @@ interface ImportMetaEnv {
   readonly VITE_URL_BACK: string;
   // Otras variables de entorno de Vite...
 }
-
-interface ImportMeta {
-  readonly env: ImportMetaEnv;
-}
