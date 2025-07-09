@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import AppTheme from "../../shared-theme/AppTheme";
+
 import { Button, CssBaseline, Typography } from "@mui/material";
+
+import AppTheme from "src/pages/shared-theme/AppTheme";
 
 export function ErrorPage(props: { disableCustomTheme?: boolean }) {
   const navigate = useNavigate();

@@ -9,14 +9,14 @@ import Stack from "@mui/material/Stack";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PeopleRoundedIcon from "@mui/icons-material/PeopleRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
-import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
-import HelpRoundedIcon from "@mui/icons-material/HelpRounded";
+// import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
+// import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
+// import HelpRoundedIcon from "@mui/icons-material/HelpRounded";
 // import AnalyticsRoundedIcon from "@mui/icons-material/AnalyticsRounded";
 // import AssignmentRoundedIcon from "@mui/icons-material/AssignmentRounded";
 
-import { useAuthContext } from "../../../../contexts/AuthUserContext";
-import { RolesEnum } from "../../../../contexts/interfaces/users.interfaces";
+import { useAuthContext } from "src/contexts/AuthUserContext";
+import { RolesEnum } from "src/contexts/interfaces/users.interfaces";
 
 const mainListItemsAdmin = [
   { text: "Home", to: "/home", icon: <HomeRoundedIcon /> },
@@ -33,11 +33,11 @@ const mainListItems = [
   // { text: 'Tasks', icon: <AssignmentRoundedIcon /> },
 ];
 
-const secondaryListItemsAdmin = [
-  { text: "Settings", icon: <SettingsRoundedIcon /> },
-  { text: "About", icon: <InfoRoundedIcon /> },
-  { text: "Feedback", icon: <HelpRoundedIcon /> },
-];
+// const secondaryListItemsAdmin = [
+//   { text: "Settings", icon: <SettingsRoundedIcon /> },
+//   { text: "About", icon: <InfoRoundedIcon /> },
+//   { text: "Feedback", icon: <HelpRoundedIcon /> },
+// ];
 
 {
   /* ***** MENU ********************************** */

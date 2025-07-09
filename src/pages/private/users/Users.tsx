@@ -1,4 +1,3 @@
-import * as React from "react";
 import type {} from "@mui/x-date-pickers/themeAugmentation";
 import type {} from "@mui/x-charts/themeAugmentation";
 import type {} from "@mui/x-data-grid-pro/themeAugmentation";
@@ -8,10 +7,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 
-// import SideMenu from "../../layouts/menu/side-menu/SideMenu";
-// import NavbarMenu from "../../layouts/menu/navbar-menu/NavbarMenu";
-import Header from "../../layouts/header/Header";
-import AppTheme from "../../shared-theme/AppTheme";
+// import SideMenu from "src/pages/layouts/menu/side-menu/SideMenu";
+// import NavbarMenu from "src/pages/layouts/menu/navbar-menu/NavbarMenu";
+import Header from "src/pages/layouts/header/Header";
+import AppTheme from "src/pages/shared-theme/AppTheme";
 import UsersMainGrid from "./components/UsersMainGrid";
 import {
   chartsCustomizations,

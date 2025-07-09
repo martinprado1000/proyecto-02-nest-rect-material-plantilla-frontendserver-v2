@@ -10,9 +10,9 @@ import {
   GridToolbarContainer,
   GridActionsCellItem,
   GridRowEditStopReasons,
-  GridRowModesModel,
-  GridRenderEditCellParams,
-  GridRowEditStopParams,
+  type GridRowModesModel,
+  type GridRenderEditCellParams,
+  //type GridRowEditStopParams,
 } from "@mui/x-data-grid";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
@@ -20,12 +20,12 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/DeleteOutlined";
 import SaveIcon from "@mui/icons-material/Save";
 import CancelIcon from "@mui/icons-material/Close";
-import { Chip, Select, Stack } from "@mui/material";
+import { Chip, Stack } from "@mui/material";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import ErrorRoundedIcon from "@mui/icons-material/ErrorRounded";
-import Tooltip, { tooltipClasses, TooltipProps } from "@mui/material/Tooltip";
+import Tooltip, { tooltipClasses, type TooltipProps } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
-import { GridColDef } from "@mui/x-data-grid";
+import type { GridColDef } from "@mui/x-data-grid";
 
 //Sweet Alert 2
 import Swal from "sweetalert2";
@@ -36,7 +36,7 @@ import { useAuthContext } from "../../../../contexts/AuthUserContext";
 import {
   ActionUserEnum,
   RolesEnum,
-  UserType,
+  type UserType,
 } from "../../../../contexts/interfaces/users.interfaces";
 import {
   validateNameFn,
@@ -307,7 +307,7 @@ export default function UsersDataGrid() {
           id: params.id,
           name: params.props.value.toString(),
         });
-        const value = { ...params.props, error: errorMessage };
+        // const value = { ...params.props, error: errorMessage };
         //console.log(value); // obtengo el objeto entero editado, aca tambien veo la propiedad error,
         return { ...params.props, error: errorMessage };
       },
@@ -326,7 +326,7 @@ export default function UsersDataGrid() {
           id: params.id,
           lastname: params.props.value.toString(),
         });
-        const value = { ...params.props, error: errorMessage };
+        // const value = { ...params.props, error: errorMessage };
         //console.log(value); // obtengo el objeto entero editado, aca tambien veo la propiedad error,
         return { ...params.props, error: errorMessage };
       },
@@ -345,7 +345,7 @@ export default function UsersDataGrid() {
           id: params.id,
           email: params.props.value.toString(),
         });
-        const value = { ...params.props, error: errorMessage };
+        // const value = { ...params.props, error: errorMessage };
         return { ...params.props, error: errorMessage };
       },
       renderEditCell: renderEditData,
@@ -364,7 +364,7 @@ export default function UsersDataGrid() {
           id: params.id,
           password: params.props.value,
         });
-        const value = { ...params.props, error: errorMessage };
+        // const value = { ...params.props, error: errorMessage };
         return { ...params.props, error: errorMessage };
       },
       renderEditCell: renderEditData,
